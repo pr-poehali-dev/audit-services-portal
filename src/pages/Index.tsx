@@ -23,9 +23,19 @@ const Index = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center space-x-2">
-              <Icon name="Building2" className="text-primary" size={28} />
-              <span className="text-xl font-bold text-primary">СК-Аудит</span>
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center shadow-md">
+                <svg viewBox="0 0 40 40" className="w-7 h-7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 10 L12 18 Q12 20 14 20 L18 20" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+                  <path d="M12 14 L17 14" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+                  <path d="M22 10 L22 18 L28 10 L28 18" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle cx="20" cy="28" r="2" fill="white"/>
+                </svg>
+              </div>
+              <div className="flex flex-col leading-tight">
+                <span className="text-lg font-bold text-primary">СК-Аудит</span>
+                <span className="text-xs text-muted-foreground">с 2003 года</span>
+              </div>
             </div>
             
             <nav className="hidden md:flex items-center space-x-8">
@@ -522,8 +532,15 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <Icon name="Building2" size={24} />
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
+                  <svg viewBox="0 0 40 40" className="w-7 h-7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 10 L12 18 Q12 20 14 20 L18 20" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+                    <path d="M12 14 L17 14" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+                    <path d="M22 10 L22 18 L28 10 L28 18" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <circle cx="20" cy="28" r="2" fill="white"/>
+                  </svg>
+                </div>
                 <span className="text-lg font-bold">СК-Аудит</span>
               </div>
               <p className="text-white/80 text-sm leading-relaxed">
