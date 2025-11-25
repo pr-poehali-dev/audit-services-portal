@@ -66,8 +66,35 @@ const Index = () => {
         </div>
       </header>
 
-      <section id="hero" className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary via-primary to-secondary">
-        <div className="container mx-auto">
+      <section id="hero" className="relative pt-32 pb-20 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-secondary"></div>
+        <div className="absolute inset-0 opacity-10">
+          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5"/>
+              </pattern>
+            </defs>
+            <rect width="1200" height="800" fill="url(#grid)" />
+            <g opacity="0.3">
+              <rect x="100" y="150" width="120" height="250" fill="white" rx="4"/>
+              <rect x="240" y="100" width="100" height="350" fill="white" rx="4"/>
+              <rect x="360" y="180" width="90" height="280" fill="white" rx="4"/>
+              <rect x="470" y="120" width="110" height="320" fill="white" rx="4"/>
+              <rect x="600" y="140" width="130" height="300" fill="white" rx="4"/>
+              <rect x="750" y="90" width="100" height="360" fill="white" rx="4"/>
+              <rect x="870" y="160" width="115" height="290" fill="white" rx="4"/>
+              <rect x="1000" y="130" width="95" height="310" fill="white" rx="4"/>
+            </g>
+            <g opacity="0.15">
+              <circle cx="150" cy="600" r="80" fill="white"/>
+              <circle cx="400" cy="650" r="60" fill="white"/>
+              <circle cx="650" cy="620" r="70" fill="white"/>
+              <circle cx="900" cy="640" r="65" fill="white"/>
+            </g>
+          </svg>
+        </div>
+        <div className="container mx-auto relative z-10">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <Badge className="mb-6 bg-accent/20 text-white border-white/30" variant="outline">
               С 2003 года на рынке аудиторских услуг
